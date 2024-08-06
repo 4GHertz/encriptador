@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header><img src="/Logo.png" alt="logo alura"></header>
+
+    <div class="cajapadre">
+        <main class="primeracaja">
+            <textarea id="texto" rows="14" cols="37" placeholder="Ingrese el texto aquí"></textarea> 
+            <!-- ojo aca puede ser sin las rows y cols para q sea responsive -->
+            <p>
+                <img src="/bi_exclamation-circle-fill.png" alt="icono exclamacion">
+                Solo letras minúsculas y sin acentos</p>
+                <footer>
+                    <button onclick="encriptar()" class="encrip">Encriptar</button>
+                    <!-- **ojo liz aca puede ser un a q sea enviado a un href -->
+                    <button onclick="desencriptar()" class="desencrip">Desencriptar</button>
+                </footer>
+        </main>
+        <div class="segundacaja">
+            <img  id="muñeco" src="/Muñeco.png" alt="muñeco">
+            <h1 id="mensajeInformativo" >Ningún mensaje fue encontrado</h1>
+            <textarea id="textoIngresado" placeholder="Ingrese el texto que desea encriptar o desencriptar" rows="10" cols="20" ></textarea>
+            <p id="resultado"></p>
+            <!-- <div>
+                <button class="copiar" onclick="copiar()" >Copiar</button>
+            </div> -->
+            
+        </div>
+    </div>
+
+    
+    <script src="/script.js"></script>
+</body>
+</html>

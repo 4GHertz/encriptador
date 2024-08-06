@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Inter';
+}
+
+body{
+    background-color: #f3f5fc;
+    box-sizing: content-box;
+    padding: 1.875rem;
+}
+
+.primeracaja{
+    background-color: #f3f5fc;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 12.5rem;
+    margin-top: 6.25rem; */
+    /* gap: 1rem; */
+}
+
+textarea {
+    resize: none;
+    background-color: #f3f5fc;
+    border: none;
+    color:#0A3871 ;
+    font-size: 2rem;
+    outline: none;
+
+}
+
+/* .textoIngresado:focus{
+    outline: none;
+} */
+
+.cajapadre{
+    display: flex;
+}
+
+.segundacaja{
+    background-color: white;
+    border-radius: 2rem;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #343A40;
+    padding: 1.25rem;
+    margin-left: 17%;
+}
+
+
+#muñeco{
+    margin: 3.125rem;
+}
+
+#textoIngresado{
+    margin-top: 1.5625rem;
+    /* text-align: center; */
+    font-size: 1rem;
+    background-color: white;
+    outline: none;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.encrip{
+    width: 50%;
+    background-color: #0A3871;
+    color: white;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+
+
+}
+
+.desencrip{
+    width: 50%;
+    background-color: #D8DFE8 ;
+    color: #0A3871;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    border: solid 1px #0A3871;
+
+}
+
+p{
+    color: #495057;
+}
+
+.copiar{
+    width: 12.5rem;
+    background-color: #c9d0d8 ;
+    color: #0A3871;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    border: solid 1px #0A3871;
+
+}
+
+@media (max-width: 1200px){
+    .cajapadre{
+        display: flex;
+        flex-direction: column;
+    }
+    #mensajeInformativo{
+        font-size: 1rem;
+    }
+
+    .desencrip, .encrip{
+        font-size: auto;
+        width: auto;
+    }
+
+    .segundacaja{
+        width: auto;
+        height: auto;
+        
+    }
+}
+
+/* QUEDAMOS EN QUE ESTAMOS ARREGLANDO EL RESPONSIVE, cuando minimizamos la pantalla queda bien pero se salen todos los textos, ,vamos en el ultimo screenshot del video, hay q dejar bien para luego pasar a git, trata de hacerlo en un dia, sino mandalo asi y era chao, ánino genia! */
